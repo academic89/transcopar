@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+}
+
+a {
+  color: #2336b6;
+}
+
+.h100 {
+  min-height: 100vh;
+}
+.h80 {
+  min-height: 80vh;
+}
+.h60 {
+  min-height: 60vh;
+}
+.h40 {
+  min-height: 40vh;
+}
+
+.icon-sm {
+  font-size: 2rem;
+}
+.icon-md {
+  font-size: 3rem;
+}
+.icon-lg {
+  font-size: 5rem;
+}
+.bg-gray {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.bg-gray-fade {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-gradient {
+  background: rgb(193,56,110);
+  background: linear-gradient(0deg, rgba(193,56,110,1) 0%, rgba(168,211,228,1) 0%, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 31%, rgba(246,246,246,1) 37%, rgba(181,181,181,1) 74%, rgba(139,139,139,1) 82%, rgba(57,57,57,1) 90%, rgba(0,0,0,1) 100%);
+}
+
+.button-primary {
+  background-color: #2336b6;
+  border-color: #2336b6;
+  transition: all ease 2s;
+  color: #fff;
+  font-weight: 700;
+}
+.button-primary:hover {
+  background-color: #111f7a;
+  border-color: #111f7a;
+}
+
+.text-primary {
+  color: #2336b6 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2336b6 !important;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.fade-enter-active {
+  transition: all 0.3s ease;
+}
+.fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-enter, .fade-in-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(0px);
+  opacity: 0;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.fade-in-enter-active {
+  transition: all 0.4s ease;
+}
+.fade-in-leave-active {
+  transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-in-enter, .fade-in-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(35px);
+  opacity: 0;
+}
+/* .carousel-component {
+  z-index: 1;
+} */
+.carousel-inner {
+  min-height: 100vh;
+}
+
+.carousel-item img {
+  min-height: 100vh;
+}
