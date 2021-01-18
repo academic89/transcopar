@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'lumbrera',
+    title: 'Transcopar',
     'Timing-Allow-Origin': '*',
     meta: [
       { charset: 'utf-8' },
@@ -39,10 +39,13 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/css/app.css'],
+  css: [
+    '@/assets/css/app.css',
+    'vue-slick-carousel/dist/vue-slick-carousel.css',
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [{ src: './plugins/vue-slick-carousel.js' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -57,7 +60,13 @@ export default {
         component: 'fa',
         suffix: true,
         icons: {
-          solid: ['faDolly', 'faShippingFast'],
+          solid: [
+            'faDolly',
+            'faShippingFast',
+            'faTruckMoving',
+            'faMapMarkedAlt',
+            'faMedal',
+          ],
         },
       },
     ],
@@ -79,7 +88,7 @@ export default {
       fileName: 'favicon.ico',
     },
     manifest: {
-      name: 'Pixel Dynamic',
+      name: 'Transcopar',
       lang: 'es',
       useWebmanifestExtension: false,
       start_url: '/?standalone=true',
@@ -90,26 +99,15 @@ export default {
     },
   },
   bootstrapVue: {
-    components: [
-      'BIcon',
-      'BIconArrowRight',
-      'BIconBezier',
-      'BIconBezier2',
-      'BIconBagCheck',
-      'BIconPhone',
-      'BIconAward',
-      'BIconBoundingBox',
-      'BIconCheckCircleFill',
-      'BIconCash',
-    ],
+    components: [],
     componentPlugins: [
       'LayoutPlugin',
       'ButtonPlugin',
       'NavbarPlugin',
       'OverlayPlugin',
-      'TabsPlugin',
       'NavPlugin',
       'CarouselPlugin',
+      'CollapsePlugin',
     ],
   },
 

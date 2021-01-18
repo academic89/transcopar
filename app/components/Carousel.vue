@@ -16,20 +16,20 @@
     >
       <!-- Slides with custom text -->
       <b-carousel-slide
-        img-src="../assets/img/trailer-test-3.png"
+        img-src="../assets/img/index.jpg"
         img-alt="trancospar 2"
       >
       </b-carousel-slide>
 
       <!-- Slides with image only -->
       <b-carousel-slide
-        img-src="../assets/img/trailer-test-2.jpg"
+        img-src="../assets/img/index2.jpg"
         img-alt="trancospar 3"
       ></b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
       <b-carousel-slide
-        img-src="../assets/img/trailer-test.jpg"
+        img-src="../assets/img/index3.jpg"
         img-alt="trancospar 4"
       >
       </b-carousel-slide>

@@ -12,7 +12,7 @@
     <div class="nav">
       <div class="nav__content">
         <div class="w-100 text-center box-logo">
-          <img class="w-25" src="../assets/img/logo.png" alt="Transcopar" />
+          <img width="220" src="../assets/img/logo.png" alt="Transcopar" />
         </div>
         <ul class="nav__list">
           <li class="nav__list-item">Home</li>
@@ -148,7 +148,7 @@ export default {
 }
 .nav__content {
   position: fixed;
-  top: 50%;
+  top: 0%;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   width: 100%;
@@ -157,6 +157,8 @@ export default {
   font-weight: 200;
   cursor: pointer;
   z-index: 9;
+  transition: all ease 2s;
+  -webkit-transition: all ease 2s;
 }
 .nav__list-item {
   position: relative;
@@ -189,6 +191,9 @@ export default {
 }
 .nav__list-item:hover:before {
   width: 100%;
+}
+body.nav-active .nav__content {
+  top: 50%;
 }
 body.nav-active .box-logo {
   opacity: 1;
