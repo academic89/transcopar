@@ -1,8 +1,8 @@
 <template>
-  <section id="footer" class="py-5 bg-black text-white small">
+  <section id="footer" class="pt-5 pb-2 bg-black text-white small">
     <b-container>
       <b-row class="d-flex align-items-end">
-        <b-col>
+        <b-col sm="4">
           <h6>Localizanos</h6>
           <p class="mb-4">
             Contáctanos para mayor información e informarte como es el proceso
@@ -25,11 +25,11 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col>
+        <b-col sm="3">
           <b-row class="d-flex align-items-center">
             <b-col cols="auto">
               <h6 class="h4">
-                <fa-icon class="fa-2x fa-fw" icon="map-marked-alt"></fa-icon>
+                <fa-icon class="fa-2x fa-fw" :icon="faWhatsapp"></fa-icon>
               </h6>
             </b-col>
             <b-col class="pl-0">
@@ -40,26 +40,67 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col>
+        <b-col sm="3">
           <b-row class="d-flex align-items-center">
             <b-col cols="auto">
               <h6 class="h4">
-                <fa-icon class="fa-2x fa-fw" icon="map-marked-alt"></fa-icon>
+                <fa-icon
+                  class="fa-2x fa-fw"
+                  icon="envelope-open-text"
+                ></fa-icon>
               </h6>
             </b-col>
             <b-col class="pl-0">
               <p>
                 <span class="font-weight-bold">Correo electrónico:</span><br />
                 contacto@transocpar.com
-                <fa-icon class="fa-2x fa-fw" icon="facebook-square"></fa-icon>
               </p>
             </b-col>
           </b-row>
+        </b-col>
+        <b-col sm="2">
+          <h6>Síguenos en:</h6>
+          <p class="lead">
+            <fa-icon class="mr-2" :icon="faFacebookSquare"></fa-icon>
+            <fa-icon class="mr-2" :icon="faLinkedin"></fa-icon>
+            <fa-icon class="mr-2" :icon="faInstagram"></fa-icon>
+          </p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col sm="12">
+          <p class="small text-white text-center mt-5">
+            2021 Transcopar<br />
+            Todos los derechos reservados.<br />
+            Al usar este sitio aceptas nuestra política de privacidad así como
+            nuestros Terminos y condiciones
+          </p>
         </b-col>
       </b-row>
     </b-container>
   </section>
 </template>
 <script>
-export default {}
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faInstagram,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons'
+export default {
+  computed: {
+    faFacebookSquare() {
+      return faFacebookSquare
+    },
+    faLinkedin() {
+      return faLinkedin
+    },
+    faInstagram() {
+      return faInstagram
+    },
+    faWhatsapp() {
+      return faWhatsapp
+    },
+  },
+}
 </script>
