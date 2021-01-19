@@ -2,7 +2,7 @@
   <div class="accordion mb-4" role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block v-b-toggle.accordion-1 variant="danger"
+        <b-button v-b-toggle.accordion-1 block variant="danger"
           >¿Quiénes son nuestros clientes?</b-button
         >
       </b-card-header>
@@ -26,7 +26,7 @@
 
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block v-b-toggle.accordion-2 variant="danger"
+        <b-button v-b-toggle.accordion-2 block variant="danger"
           >¿Cuáles son nuestros principales productos o servicios?</b-button
         >
       </b-card-header>
@@ -42,7 +42,7 @@
 
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block v-b-toggle.accordion-3 variant="danger"
+        <b-button v-b-toggle.accordion-3 block variant="danger"
           >¿Cuáles son nuestros mercados?</b-button
         >
       </b-card-header>
@@ -59,7 +59,7 @@
     </b-card>
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block v-b-toggle.accordion-4 variant="danger"
+        <b-button v-b-toggle.accordion-4 block variant="danger"
           >¿Cuál es nuestra tecnología?</b-button
         >
       </b-card-header>

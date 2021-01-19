@@ -231,7 +231,7 @@
         </b-row>
       </b-container>
     </section>
-    <section id="faq" class="py-5 h80">
+    <section id="faq" class="py-5 h80 bg-pattern">
       <b-container class="mt-0 mt-sm-5">
         <b-row class="justify-content-center">
           <b-col sm="8">

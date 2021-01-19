@@ -44,7 +44,7 @@ h6,
 }
 
 a {
-  color: #2336b6;
+  color: #49cbff;
 }
 
 .h100 {
@@ -75,6 +75,9 @@ a {
 .bg-gray-fade {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.bg-black {
+  background-color: #000;
+}
 .bg-gradient {
   background: rgb(193, 56, 110);
   background: linear-gradient(
@@ -89,6 +92,11 @@ a {
     rgba(57, 57, 57, 1) 90%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+
+.bg-pattern {
+  background: url('../img/faq.jpg') center no-repeat;
+  background-attachment: fixed;
 }
 
 .button-primary {

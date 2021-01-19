@@ -67,6 +67,7 @@ export default {
             'faMapMarkedAlt',
             'faMedal',
           ],
+          brands: ['fabFacebookSquare'],
         },
       },
     ],
