@@ -1,9 +1,33 @@
 <template>
   <div class="carousel-wrapper mb-5">
     <VueSlickCarousel v-bind="slickOptions">
-      <Card v-for="i in 5" :key="i" padding="p-1 card-slick" align="center">
-        <img class="img-slick" src="../assets/img/torton.png" alt="torton" />
+      <Card padding="p-1 card-slick" align="center">
+        <img
+          class="img-slick"
+          src="../assets/img/camioneta.png"
+          alt="camioneta"
+        />
+        <h2 class="h4 text-danger mb-2">Camioneta</h2>
+        <p>
+          <small>Capacidad de carga:</small> <br />
+          <span class="font-weight-bold">3 1/2 toneladas</span>
+        </p>
+      </Card>
+      <Card padding="p-1 card-slick" align="center">
+        <img
+          class="img-slick mb-2"
+          src="../assets/img/torton2.png"
+          alt="torton"
+        />
         <h2 class="h4 text-danger mb-2">Torton</h2>
+        <p>
+          <small>Capacidad de carga:</small> <br />
+          <span class="font-weight-bold">12 toneladas</span>
+        </p>
+      </Card>
+      <Card padding="p-1 card-slick" align="center">
+        <img class="img-slick" src="../assets/img/trailer.png" alt="trailer" />
+        <h2 class="h4 text-danger mb-2">Trailer</h2>
         <p>
           <small>Capacidad de carga:</small> <br />
           <span class="font-weight-bold">22 toneladas</span>
@@ -18,7 +42,7 @@ export default {
   data() {
     return {
       slickOptions: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         arrows: true,
         dots: false,
         responsive: [

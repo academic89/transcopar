@@ -109,6 +109,7 @@ export default {
       'NavPlugin',
       'CarouselPlugin',
       'CollapsePlugin',
+      'CardPlugin',
     ],
   },
 

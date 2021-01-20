@@ -96,7 +96,15 @@ a {
 
 .bg-pattern {
   background: url('../img/faq.jpg') center no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .bg-pattern {
+    background: url('../img/faq.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: initial;
+  }
 }
 
 .button-primary {
@@ -436,5 +444,5 @@ a {
 }
 
 .card-slick {
-  margin-top: 90px;
+  margin-top: 70px;
 }

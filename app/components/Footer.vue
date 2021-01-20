@@ -8,7 +8,7 @@
             Contáctanos para mayor información e informarte como es el proceso
             de transporte.
           </p>
-          <b-row class="d-flex align-items-center">
+          <b-row class="d-flex align-items-center mb-4">
             <b-col cols="auto">
               <h6 class="h4">
                 <fa-icon class="fa-2x fa-fw" icon="map-marked-alt"></fa-icon>
@@ -26,7 +26,7 @@
           </b-row>
         </b-col>
         <b-col sm="3">
-          <b-row class="d-flex align-items-center">
+          <b-row class="d-flex align-items-center mb-4">
             <b-col cols="auto">
               <h6 class="h4">
                 <fa-icon class="fa-2x fa-fw" :icon="faWhatsapp"></fa-icon>
@@ -41,7 +41,7 @@
           </b-row>
         </b-col>
         <b-col sm="3">
-          <b-row class="d-flex align-items-center">
+          <b-row class="d-flex align-items-center mb-4">
             <b-col cols="auto">
               <h6 class="h4">
                 <fa-icon
