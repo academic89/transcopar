@@ -1,9 +1,12 @@
 <template>
-  <div class="w-100 navbar-component">
+  <div
+    :class="active ? 'active-nav shadow-sm' : ''"
+    class="w-100 navbar-component"
+  >
     <div class="logo">
       <img src="../assets/img/logo.png" alt="Transcopar" />
     </div>
-    <div class="menu-icon">
+    <div id="menu-icon" class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
       <span class="menu-icon__line"></span>
       <span class="menu-icon__line menu-icon__line-right"></span>
@@ -15,10 +18,10 @@
           <img width="220" src="../assets/img/logo.png" alt="Transcopar" />
         </div>
         <ul class="nav__list">
-          <li class="nav__list-item">Home</li>
-          <li class="nav__list-item">About</li>
-          <li class="nav__list-item">Projects</li>
-          <li class="nav__list-item">Contact</li>
+          <li class="nav__list-item">Inicio</li>
+          <li class="nav__list-item">Acerca de nosotros</li>
+          <li class="nav__list-item">Galería</li>
+          <li class="nav__list-item">Contacto</li>
         </ul>
       </div>
     </div>
@@ -31,18 +34,21 @@ export default {
       body: null,
       menu: null,
       menuItems: null,
+      active: false,
     }
   },
   beforeDestroy() {
     this.init()
+    window.addEventListener('scroll', this.handleScroll)
   },
   beforeMount() {
     this.init()
+    window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
     async init() {
       this.body = await window.document.querySelector('body')
-      this.menu = await window.document.querySelector('.menu-icon')
+      this.menu = await window.document.querySelector('#menu-icon')
       this.menuItems = await window.document.querySelectorAll('.nav__list-item')
 
       this.applyListeners(this.menu)
@@ -57,6 +63,13 @@ export default {
         element.classList.remove(stringClass)
       else element.classList.add(stringClass)
     },
+    handleScroll() {
+      if (window.scrollY > 100) {
+        this.active = true
+      } else {
+        this.active = false
+      }
+    },
   },
 }
 </script>
@@ -68,9 +81,12 @@ export default {
   background: transparent;
   position: fixed;
   top: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
 }
-.navbar-component.active {
+.navbar-component.active-nav {
   background: #fff;
+  height: 70px;
 }
 .logo {
   position: fixed;
@@ -79,8 +95,11 @@ export default {
   left: 30px;
   z-index: 6;
   opacity: 1;
-  transition: all ease 5s;
-  -webkit-transition: all ease 5s;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+}
+.navbar-component.active-nav .logo {
+  width: 120px;
 }
 .menu-icon {
   height: 30px;
@@ -110,7 +129,9 @@ export default {
   width: 15px;
   float: right;
 }
-
+.navbar-component.active-nav .menu-icon__line {
+  background-color: #000;
+}
 .nav {
   position: fixed;
   z-index: 1;
@@ -153,12 +174,15 @@ export default {
   transform: translate(0%, -50%);
   width: 100%;
   text-align: center;
-  font-size: calc(1vw + 10px);
+  font-size: calc(1vw + 15px);
   font-weight: 200;
   cursor: pointer;
   z-index: 9;
   transition: all ease 2s;
   -webkit-transition: all ease 2s;
+}
+.nav__list {
+  padding-left: 0;
 }
 .nav__list-item {
   position: relative;
@@ -173,7 +197,6 @@ export default {
   transition: opacity 0.2s ease, transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease,
     -webkit-transform 0.3s ease;
-  margin-right: 25px;
   text-transform: uppercase;
 }
 .nav__list-item:before {
@@ -181,7 +204,7 @@ export default {
   position: absolute;
   background: #000000;
   width: 20px;
-  height: 1px;
+  height: 3px;
   top: 100%;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
@@ -189,8 +212,9 @@ export default {
   transition: all 0.3s ease;
   z-index: -1;
 }
+
 .nav__list-item:hover:before {
-  width: 100%;
+  background: red;
 }
 body.nav-active .nav__content {
   top: 50%;
@@ -232,6 +256,8 @@ body.nav-active .nav:before {
   transition-delay: 0s;
 }
 body.nav-active .nav__list-item {
+  display: block;
+  margin-bottom: 15px;
   opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);

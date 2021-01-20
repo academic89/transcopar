@@ -14,7 +14,7 @@
                     Somos una empresa de transporte 100% mexicana y
                     responseable.
                   </h1>
-                  <b-button variant="success" class="px-4" pill
+                  <b-button variant="success" class="px-4" size="lg" pill
                     >Conoce nuestros servicios</b-button
                   >
                 </b-col>
