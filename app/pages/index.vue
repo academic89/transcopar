@@ -1,7 +1,9 @@
 <template>
   <div class="index">
+    <transition name="slide-fade">
+      <CardAction v-if="showAction" />
+    </transition>
     <section ref="home" class="intro relative">
-      <Navbar />
       <CarouselMobile class="d-block d-sm-none" />
       <Carousel class="d-none d-sm-block" />
       <div class="overlay-intro d-flex align-items-center">
@@ -10,11 +12,22 @@
             <b-row class="justify-content-end">
               <transition name="fade-in">
                 <b-col v-if="showIntro" class="text-white" sm="4">
-                  <h1 class="h2 mb-5">
-                    Somos una empresa de transporte 100% mexicana y
-                    responseable.
+                  <h1 class="mb-4 font-weight-normal text-title text-warning">
+                    Transcopar
                   </h1>
-                  <b-button variant="success" class="px-4" size="lg" pill
+                  <h2 class="h4 mb-5">
+                    Somos la logística más completa y rápida del mercado en el
+                    servicio de transporte.
+                  </h2>
+                  <b-button
+                    v-scroll-to="{
+                      el: '#services',
+                      duration: 800,
+                    }"
+                    variant="success"
+                    class="px-4"
+                    size="lg"
+                    pill
                     >Conoce nuestros servicios</b-button
                   >
                 </b-col>
@@ -25,7 +38,7 @@
       </div>
       <Separator />
     </section>
-    <section ref="services" class="py-5 bg-gray text-center h100">
+    <section id="services" ref="services" class="py-5 bg-gray text-center h100">
       <b-container>
         <b-row>
           <transition name="fade-in">
@@ -51,9 +64,8 @@
                   <span class="text-danger">L</span>ocal
                 </h2>
                 <p class="small mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
+                  Transportamos tu mercancía dentro de tu misma localidad o
+                  estado en donde te encuentres.
                 </p>
               </Card>
             </b-col>
@@ -68,9 +80,9 @@
                   <span class="text-danger">F</span>oráneo
                 </h2>
                 <p class="small mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
+                  Ofrecemos el servicio de transporte de mercancía a todos los
+                  estados de la republica mexicana con la logística más rápida
+                  del mercado.
                 </p>
               </Card>
             </b-col>
@@ -141,9 +153,10 @@
                   <span class="text-danger">D</span>edicado
                 </h2>
                 <p class="small mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
+                  El servicio dedicado garantiza que las unidades solamente
+                  serán utilizadas por tu empresa, por lo que no habrá
+                  sorpresas, para contratar el servicio es necesario indicar qué
+                  tipo de unidades requieres para el transporte de mercancía.
                 </p>
               </Card>
             </b-col>
@@ -276,6 +289,7 @@
 export default {
   data() {
     return {
+      showAction: false,
       showIntro: false,
       showTitleServices: false,
       showServices: false,
@@ -315,10 +329,13 @@ export default {
 
       if (window.scrollY > (home / 5) * 4) {
         this.showServices = true
+      } else {
+        this.showAction = false
       }
 
       if (window.scrollY > home + (services / 5) * 3) {
         this.showTitleUnits = true
+        this.showAction = true
       }
 
       if (window.scrollY > home + (services / 5) * 4) {
@@ -354,6 +371,13 @@ export default {
 }
 </script>
 <style scoped>
+.text-title {
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 0.5rem;
+  border-top: 3px solid red;
+  border-bottom: 3px solid green;
+}
 .overlay-intro {
   position: absolute;
   top: 0;

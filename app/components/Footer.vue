@@ -29,13 +29,14 @@
           <b-row class="d-flex align-items-center mb-4">
             <b-col cols="auto">
               <h6 class="h4">
-                <fa-icon class="fa-2x fa-fw" :icon="faWhatsapp"></fa-icon>
+                <fa-icon class="fa-2x fa-fw" icon="mobile-alt"></fa-icon>
               </h6>
             </b-col>
             <b-col class="pl-0">
-              <p>
+              <p class="mb-0">
                 <span class="font-weight-bold">Contacto:</span><br />
-                Tel. (55) 5555 5555
+                Tel. <a href="tel:5581139489">01 (55) 8113 9489</a> <br />
+                Tel. <a href="tel:5581135873">01 (55) 8113 5873</a>
               </p>
             </b-col>
           </b-row>
@@ -53,7 +54,7 @@
             <b-col class="pl-0">
               <p>
                 <span class="font-weight-bold">Correo electrónico:</span><br />
-                contacto@transocpar.com
+                transcopar@hotmail.com
               </p>
             </b-col>
           </b-row>

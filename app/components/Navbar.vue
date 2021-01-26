@@ -6,6 +6,7 @@
     <div class="logo">
       <img src="../assets/img/logo.png" alt="Transcopar" />
     </div>
+    <div class="label-menu">Menú</div>
     <div id="menu-icon" class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
       <span class="menu-icon__line"></span>
@@ -18,9 +19,10 @@
           <img width="220" src="../assets/img/logo.png" alt="Transcopar" />
         </div>
         <ul class="nav__list">
-          <li class="nav__list-item">Inicio</li>
-          <li class="nav__list-item">Acerca de nosotros</li>
-          <li class="nav__list-item">Galería</li>
+          <li class="nav__list-item" @click="changeRoute('/')">Inicio</li>
+          <li class="nav__list-item" @click="changeRoute('/about')">
+            Quiénes somos
+          </li>
           <li class="nav__list-item">Contacto</li>
         </ul>
       </div>
@@ -70,6 +72,12 @@ export default {
         this.active = false
       }
     },
+    changeRoute(route) {
+      this.toggleClass(this.body, 'nav-active')
+      setTimeout(() => {
+        this.$router.push(route)
+      }, 300)
+    },
   },
 }
 </script>
@@ -87,6 +95,15 @@ export default {
 .navbar-component.active-nav {
   background: #fff;
   height: 70px;
+}
+.label-menu {
+  position: absolute;
+  right: 90px;
+  top: 25px;
+  color: #fff;
+}
+.navbar-component.active-nav .label-menu {
+  color: #000;
 }
 .logo {
   position: fixed;

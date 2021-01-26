@@ -45,7 +45,10 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: './plugins/vue-slick-carousel.js' }],
+  plugins: [
+    { src: './plugins/vue-slick-carousel.js' },
+    { src: './plugins/vue-scroll-to.js' },
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -67,6 +70,7 @@ export default {
             'faMapMarkedAlt',
             'faMedal',
             'faEnvelopeOpenText',
+            'faMobileAlt',
           ],
         },
       },
@@ -81,6 +85,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'vue-scrollto/nuxt',
   ],
   pwa: {
     icon: {

@@ -94,6 +94,11 @@ a {
   );
 }
 
+.bg-about {
+  background: url('../img/bg-about.jpg') center no-repeat;
+  background-size: cover;
+}
+
 .bg-pattern {
   background: url('../img/faq.jpg') center no-repeat;
   background-size: cover;
@@ -145,10 +150,10 @@ a {
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .fade-in-enter-active {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 .fade-in-leave-active {
-  transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .fade-in-enter, .fade-in-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {

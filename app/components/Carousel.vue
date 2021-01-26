@@ -23,13 +23,13 @@
 
       <!-- Slides with image only -->
       <b-carousel-slide
-        img-src="../assets/img/index2.jpg"
+        img-src="../assets/img/index4.jpg"
         img-alt="trancospar 3"
       ></b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
       <b-carousel-slide
-        img-src="../assets/img/index3.jpg"
+        img-src="../assets/img/index2.jpg"
         img-alt="trancospar 4"
       >
       </b-carousel-slide>
