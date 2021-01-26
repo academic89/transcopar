@@ -1,0 +1,34 @@
+version: '3'
+services:
+    nginx:
+        container_name: luxor-nginx
+        image: nginx:v1.0.0
+        restart: always
+        build:
+            context: ./
+            dockerfile: ./nginx/Dockerfile
+        environment:
+            - VIRTUAL_HOST=stg.lumbrera.com.mx
+            - LETSENCRYPT_HOST=stg.lumbrera.com.mx
+            - LETSENCRYPT_EMAIL=vescalante@lumbrera.com.mx
+        expose:
+            - "80"
+            - "443"
+        networks:
+            - nginx-proxy
+            - net-front-luxor
+    luxor:
+        build: app/.
+        container_name: luxor
+        restart: always
+        command:
+            "npm run start"
+        networks:
+            - nginx-proxy
+            - net-front-luxor
+
+networks:
+     net-front-luxor:
+     nginx-proxy:
+        external:
+            name: ubuntu_nginx-proxy
