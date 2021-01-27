@@ -16,7 +16,7 @@
     <div class="nav">
       <div class="nav__content">
         <div class="w-100 text-center box-logo">
-          <img width="220" src="../assets/img/logo.png" alt="Transcopar" />
+          <img src="../assets/img/logo.png" alt="Transcopar" />
         </div>
         <ul class="nav__list">
           <li class="nav__list-item" @click="changeRoute('/')">Inicio</li>
@@ -107,7 +107,7 @@ export default {
 }
 .logo {
   position: fixed;
-  width: 150px;
+  width: 180px;
   top: 10px;
   left: 30px;
   z-index: 6;
@@ -115,8 +115,14 @@ export default {
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
 }
+
+@media (min-width: 992px) {
+  .logo {
+    width: 330px;
+  }
+}
 .navbar-component.active-nav .logo {
-  width: 120px;
+  width: 180px;
 }
 .menu-icon {
   height: 30px;

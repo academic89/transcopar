@@ -16,8 +16,7 @@
                     Transcopar
                   </h1>
                   <h2 class="h4 mb-5">
-                    Somos la logística más completa y rápida del mercado en el
-                    servicio de transporte.
+                    Somos líderes en el servicio de transporte en México.
                   </h2>
                   <b-button
                     v-scroll-to="{
@@ -38,7 +37,11 @@
       </div>
       <Separator />
     </section>
-    <section id="services" ref="services" class="py-5 bg-gray text-center h100">
+    <section
+      id="services"
+      ref="services"
+      class="py-5 bg-services text-center h100"
+    >
       <b-container>
         <b-row>
           <transition name="fade-in">
@@ -86,7 +89,7 @@
                 </p>
               </Card>
             </b-col>
-            <b-col sm="4" class="mb-5">
+            <!-- <b-col sm="4" class="mb-5">
               <Card>
                 <div
                   class="box-icon shadow d-flex align-items-center justify-content-center"
@@ -102,12 +105,12 @@
                   standard dummy text ever since the 1500s
                 </p>
               </Card>
-            </b-col>
+            </b-col> -->
           </b-row>
         </transition>
         <transition name="fade-in">
           <b-row v-if="showServices" class="d-flex align-items-stretch">
-            <b-col class="mb-5">
+            <!-- <b-col class="mb-5">
               <Card>
                 <div
                   class="box-icon shadow d-flex align-items-center justify-content-center"
@@ -124,30 +127,30 @@
                   standard dummy text ever since the 1500s
                 </p>
               </Card>
-            </b-col>
-            <b-col class="mb-5">
+            </b-col> -->
+            <b-col sm="4" offset-sm="4" class="mb-5">
               <Card>
                 <div
                   class="box-icon shadow d-flex align-items-center justify-content-center"
                 >
-                  <fa-icon class="fa-2x fa-fw" icon="dolly"></fa-icon>
+                  <fa-icon class="fa-2x fa-fw" icon="truck-moving"></fa-icon>
                 </div>
                 <h2 class="h3 mt-5 mt-sm-4">
-                  <span class="text-danger">C</span>amion completo
+                  <span class="text-danger">C</span>amión completo
                 </h2>
                 <p class="small mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
+                  ¿Necesitas un camión ahora mismo? Nosotros ponemos a tu
+                  disposición la renta de un camión completo para transportar tu
+                  mercancía de manera segura, rápida y eficaz.
                 </p>
               </Card>
             </b-col>
-            <b-col class="mb-5">
+            <b-col sm="4" class="mb-5">
               <Card>
                 <div
                   class="box-icon shadow d-flex align-items-center justify-content-center"
                 >
-                  <fa-icon class="fa-2x fa-fw" icon="shipping-fast"></fa-icon>
+                  <fa-icon class="fa-2x fa-fw" icon="truck-loading"></fa-icon>
                 </div>
                 <h2 class="h3 mt-5 mt-md-4">
                   <span class="text-danger">D</span>edicado
@@ -164,7 +167,7 @@
         </transition>
       </b-container>
     </section>
-    <section ref="units" class="py-5 bg-gray h80">
+    <section ref="units" class="py-5 bg-white h80">
       <b-container>
         <b-row>
           <transition name="fade-in">

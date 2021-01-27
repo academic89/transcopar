@@ -104,6 +104,11 @@ a {
   background-size: cover;
 }
 
+.bg-services {
+  background: url('../img/bg-services.png') center no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
   .bg-pattern {
     background: url('../img/faq.jpg') center no-repeat;

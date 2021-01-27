@@ -5,8 +5,7 @@
       <b-container class="h40 d-flex align-items-center">
         <b-row class="mt-5 text-white">
           <b-col>
-            <h1>Quienes somos</h1>
-            <p class="lead">Conoce más acerca de nosotros...</p>
+            <h1>Quienes somos...</h1>
           </b-col>
         </b-row>
       </b-container>
@@ -14,8 +13,11 @@
     <section class="bg-white h100 py-5">
       <b-container>
         <b-row class="justify-content-center">
-          <b-col sm="8" md="5">
-            <h2 class="mt-5"><span class="text-danger">M</span>isión</h2>
+          <b-col sm="10" md="5">
+            <h2 class="mt-5 d-flex align-items-center">
+              <Pulse />
+              <span class="text-danger">M</span>isión
+            </h2>
             <p>
               Transcopar es único e inigualable; considerando la gama enorme que
               tenemos como competencia en el servicio del transporte, transcopar
@@ -27,7 +29,7 @@
               de servicio que fomente el crecimiento de nuestra empresa.
             </p>
           </b-col>
-          <b-col sm="8" offset-md="1" md="6">
+          <b-col sm="10" offset-md="1" md="6">
             <img
               class="right-img shadow"
               src="../../assets/img/index3.jpg"
@@ -35,9 +37,12 @@
             />
           </b-col>
         </b-row>
-        <b-row class="justify-content-center">
-          <b-col sm="8" md="5">
-            <h2><span class="text-danger mt-5">V</span>isión</h2>
+        <b-row class="justify-content-center d-flex align-items-end">
+          <b-col sm="10" md="5">
+            <h2 class="mt-5 d-flex align-items-center">
+              <Pulse />
+              <span class="text-danger">V</span>isión
+            </h2>
             <p>
               Ser la empresa líder a nivel nacional en el sector transporte
               brindando un servicio de calidad, manteniéndonos dentro del
@@ -50,7 +55,51 @@
               alt="Transcopar"
             />
           </b-col>
-          <b-col sm="8" offset-md="1" md="6" class="mt-5"> </b-col>
+          <b-col sm="10" offset-md="1" md="6" class="my-3 my-sm-5">
+            <h2 class="mt-5 d-flex align-items-center">
+              <Pulse />
+              <span class="text-danger">T</span>ranscopar
+            </h2>
+            <p>
+              Consideramos indispensable contar con un sistema operativo que
+              garantice la satisfacción de nuestro cliente innovando y renovando
+              cada segmento que forma la empresa. Realizar fletes es nuestra
+              labor más grande pero culminarla es nuestro éxito porque servirte
+              queda reflejado en tu satisfacción total. Se cuenta con rastreo
+              satelital en cada una de las unidades que contamos, las 24hrs del
+              día y los 365 días del año, complementado con teléfono móvil para
+              mantenernos comunicados a nuestros clientes y ofrecer mejor
+              servicio.
+            </p>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+    <section class="py-5 bg-gray">
+      <b-container>
+        <b-row class="mt-5">
+          <b-col>
+            <div class="box-banner shadow mb-5">
+              <b-row class="justify-content-center">
+                <b-col sm="8" md="6" class="box-img shadow">
+                  <img src="../../assets/img/logo.png" alt="transcopar" />
+                </b-col>
+                <b-col sm="10">
+                  <h3 class="font-weight-normal">
+                    "Generación tras generación manteniendo los mismos valores
+                    que son los que los caracterizan siempre teniendo como
+                    primer término el mejor servicio para nuestros clientes..."
+                  </h3>
+                  <h4 class="h6 mt-4">
+                    Giovanni Paredes
+                    <span class="font-weight-normal"
+                      >| Director General de Transcopar S.A. de C.V.</span
+                    >
+                  </h4>
+                </b-col>
+              </b-row>
+            </div>
+          </b-col>
         </b-row>
       </b-container>
     </section>
@@ -86,14 +135,38 @@ export default {}
 
 .right-img {
   max-width: 140%;
-  margin-top: 200px;
+  margin-top: 20px;
   border-radius: 15px;
 }
 
 .left-img {
   max-width: 140%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: -100px;
   border-radius: 15px;
+}
+.box-banner {
+  background: #000;
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+
+.box-img {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  margin-top: -80px;
+}
+
+@media (min-width: 992px) {
+  .right-img {
+    margin-top: 200px;
+  }
+  .left-img {
+    margin-top: 30px;
+  }
 }
 </style>

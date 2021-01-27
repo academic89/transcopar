@@ -16,14 +16,14 @@
     >
       <!-- Slides with custom text -->
       <b-carousel-slide
-        img-src="../assets/img/index.jpg"
+        img-src="../assets/img/index4.jpg"
         img-alt="trancospar 2"
       >
       </b-carousel-slide>
 
       <!-- Slides with image only -->
       <b-carousel-slide
-        img-src="../assets/img/index4.jpg"
+        img-src="../assets/img/index.jpg"
         img-alt="trancospar 3"
       ></b-carousel-slide>
 
