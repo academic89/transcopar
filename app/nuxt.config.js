@@ -72,6 +72,7 @@ export default {
             'faEnvelopeOpenText',
             'faMobileAlt',
             'faTruckLoading',
+            'faPhoneSquareAlt',
           ],
         },
       },

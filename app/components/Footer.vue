@@ -70,11 +70,9 @@
       </b-row>
       <b-row>
         <b-col sm="12">
-          <p class="small text-white text-center mt-5">
+          <p class="small text-white text-center mt-5 mb-3">
             2021 Transcopar<br />
-            Todos los derechos reservados.<br />
-            Al usar este sitio aceptas nuestra política de privacidad así como
-            nuestros Terminos y condiciones
+            Todos los derechos reservados.
           </p>
         </b-col>
       </b-row>

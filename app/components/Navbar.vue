@@ -23,7 +23,9 @@
           <li class="nav__list-item" @click="changeRoute('/about')">
             Quiénes somos
           </li>
-          <li class="nav__list-item">Contacto</li>
+          <li class="nav__list-item" @click="changeRoute('/contact')">
+            Contacto
+          </li>
         </ul>
       </div>
     </div>
@@ -113,6 +115,7 @@ export default {
   z-index: 6;
   opacity: 1;
   transition: all ease 0.5s;
+  display: none;
   -webkit-transition: all ease 0.5s;
 }
 
@@ -123,6 +126,7 @@ export default {
 }
 .navbar-component.active-nav .logo {
   width: 180px;
+  display: inline-block;
 }
 .menu-icon {
   height: 30px;

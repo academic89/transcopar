@@ -12,12 +12,12 @@
             <b-row class="justify-content-end">
               <transition name="fade-in">
                 <b-col v-if="showIntro" class="text-white" sm="4">
-                  <h1 class="mb-4 font-weight-normal text-title text-warning">
-                    Transcopar
-                  </h1>
-                  <h2 class="h4 mb-5">
+                  <div class="w-100 mb-3">
+                    <img src="../assets/img/logo-intro2.png" alt="Transcopar" />
+                  </div>
+                  <h1 class="h4 mb-5">
                     Somos líderes en el servicio de transporte en México.
-                  </h2>
+                  </h1>
                   <b-button
                     v-scroll-to="{
                       el: '#services',
