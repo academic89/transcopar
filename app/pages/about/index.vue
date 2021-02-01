@@ -123,22 +123,25 @@
             </transition>
           </b-col>
         </b-row>
-        <b-row class="justify-content-center my-4">
-          <b-col sm="6">
-            <h6 class="mb-4 text-center">
-              ¿Estás interesado en nuestros servicios o deseas más información?
-            </h6>
-            <b-button
-              href="https://api.whatsapp.com/send?phone=525543816903&text=Hola%2C%20¿quisiera%20pedir%20informes%20sobre%20sus%20servicios%20de%20transporte?"
-              target="_blank"
-              variant="success"
-              block
-              pill
-              ><fa-icon class="fa-fw mr-2" :icon="faWhatsapp"></fa-icon>Mandanos
-              un whatsapp</b-button
-            >
-          </b-col>
-        </b-row>
+        <transition name="fade-in">
+          <b-row v-if="showBanner" class="justify-content-center my-4">
+            <b-col sm="6">
+              <h6 class="mb-4 text-center">
+                ¿Estás interesado en nuestros servicios o deseas más
+                información?
+              </h6>
+              <b-button
+                href="https://api.whatsapp.com/send?phone=525543816903&text=Hola%2C%20¿quisiera%20pedir%20informes%20sobre%20sus%20servicios%20de%20transporte?"
+                target="_blank"
+                variant="success"
+                block
+                pill
+                ><fa-icon class="fa-fw mr-2" :icon="faWhatsapp"></fa-icon
+                >Mandanos un whatsapp</b-button
+              >
+            </b-col>
+          </b-row>
+        </transition>
       </b-container>
     </section>
   </div>

@@ -207,29 +207,44 @@
           <transition name="fade-in">
             <b-col v-if="showClients" sm="12">
               <b-row class="d-flex align-items-stretch">
-                <b-col cols="6" sm="4" md class="mb-4">
+                <b-col cols="6" sm="4" md="3" class="mb-4">
                   <Card padding="p-3 d-flex align-items-center">
                     <img src="../assets/img/dipak.png" alt="dipak" />
                   </Card>
                 </b-col>
-                <b-col cols="6" sm="4" md class="mb-4">
+                <b-col cols="6" sm="4" md="3" class="mb-4">
                   <Card padding="p-3 d-flex align-items-center">
                     <img src="../assets/img/cvdirecto.png" alt="cv directo" />
                   </Card>
                 </b-col>
-                <b-col cols="6" sm="4" md class="mb-4">
+                <b-col cols="6" sm="4" md="3" class="mb-4">
                   <Card padding="p-3 d-flex align-items-center">
                     <img src="../assets/img/femsa.png" alt="femsa" />
                   </Card>
                 </b-col>
-                <b-col cols="6" sm="4" md class="mb-4">
+                <b-col cols="6" sm="4" md="3" class="mb-4">
                   <Card padding="p-3 d-flex align-items-center">
                     <img src="../assets/img/pepsico.png" alt="pepsico" />
                   </Card>
                 </b-col>
-                <b-col cols="6" sm="4" md class="mb-4">
+                <b-col cols="6" sm="4" md="3" class="mb-4">
                   <Card padding="p-3 d-flex align-items-center">
                     <img src="../assets/img/urbania.png" alt="urbania" />
+                  </Card>
+                </b-col>
+                <b-col cols="6" sm="4" md="3" class="mb-4">
+                  <Card padding="p-3 d-flex align-items-center">
+                    <img src="../assets/img/italika.png" alt="italika" />
+                  </Card>
+                </b-col>
+                <b-col cols="6" sm="4" md="3" class="mb-4">
+                  <Card padding="p-3 d-flex align-items-center">
+                    <img src="../assets/img/johnson.png" alt="johnson" />
+                  </Card>
+                </b-col>
+                <b-col cols="6" sm="4" md="3" class="mb-4">
+                  <Card padding="p-3 d-flex align-items-center">
+                    <img src="../assets/img/bacardi.png" alt="bacardi" />
                   </Card>
                 </b-col>
               </b-row>

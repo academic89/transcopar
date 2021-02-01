@@ -78,25 +78,6 @@ export default {
       return faWhatsapp
     },
   },
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeDestroy() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  created() {
-    setTimeout(() => {
-      this.showIntro = true
-      setTimeout(() => {
-        this.showImageOne = true
-      }, 300)
-    }, 400)
-  },
-  methods: {
-    handleScroll() {
-      console.log('log')
-    },
-  },
 }
 </script>
 <style scoped>
