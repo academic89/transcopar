@@ -54,7 +54,7 @@
           <h5 class="mb-2 text-center">Destino:</h5>
           <b-form-select v-model="selected" :options="options"></b-form-select>
         </b-col>
-        <b-col sm="12" class="text-center mb-3">
+        <b-col v-if="check !== 'one'" sm="12" class="text-center mb-3">
           <h5 class="mb-4">¿Qué tipo unidad necesitas?</h5>
           <input
             id="tool-3"
@@ -137,8 +137,8 @@
             >
           </p>
           <p class="my-4 font-weight-bold">
-            Pónte en contacto con nosotros para cerrar tu servicio mediante
-            whatsapp
+            Pónte en contacto con nosotros mediante whatsapp para brindarte más
+            información sobre tu cotización
           </p>
           <ButtonWhatsapp />
           <b-button variant="link" pill block @click="reset"
