@@ -16,6 +16,19 @@ export default {
         content:
           'Somos líderes en el servicio de transporte en México. 30 años de experencia nos respaldan.',
       },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Transcopar S.A. de C.V.',
+      },
+      { hid: 'og:image', name: 'og:image', content: '/icons/logo.png' },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          'Somos líderes en el servicio de transporte en México. 30 años de experencia nos respaldan.',
+      },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Transcopar' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
