@@ -4,16 +4,10 @@
       <b-col sm="4" md="3">
         <div class="py-2 px-3 bg-black text-white card-action">
           <h2 class="h6 text-center text-warning">
-            ¿Te interesan contratar nuestros servicios?
+            ¿Deseas cotizar alguno de nuestros servicios?
           </h2>
-          <b-button
-            href="https://api.whatsapp.com/send?phone=525543816903&text=Hola%2C%20¿quisiera%20pedir%20informes%20sobre%20sus%20servicios%20de%20transporte?"
-            target="_blank"
-            variant="success"
-            block
-            pill
-            ><fa-icon class="fa-fw mr-2" :icon="faWhatsapp"></fa-icon
-            >Contáctanos</b-button
+          <b-button v-b-modal.cotizador variant="success" pill block
+            >Comenzar ahora</b-button
           >
         </div>
       </b-col>
@@ -21,14 +15,7 @@
   </div>
 </template>
 <script>
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-export default {
-  computed: {
-    faWhatsapp() {
-      return faWhatsapp
-    },
-  },
-}
+export default {}
 </script>
 <style scoped>
 .action-component {

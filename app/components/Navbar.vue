@@ -196,7 +196,7 @@ export default {
 }
 .nav__content {
   position: fixed;
-  top: 0%;
+  top: -30%;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   width: 100%;

@@ -73,6 +73,9 @@ export default {
             'faMobileAlt',
             'faTruckLoading',
             'faPhoneSquareAlt',
+            'faTruck',
+            'faTrailer',
+            'faTimesCircle',
           ],
         },
       },
@@ -117,6 +120,8 @@ export default {
       'CarouselPlugin',
       'CollapsePlugin',
       'CardPlugin',
+      'ModalPlugin',
+      'FormSelectPlugin',
     ],
   },
 
