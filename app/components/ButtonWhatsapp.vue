@@ -1,6 +1,6 @@
 <template>
   <b-button
-    href="https://api.whatsapp.com/send?phone=525543816903&text=Hola%2C%20¿quisiera%20pedir%20informes%20sobre%20una%20cotización?"
+    href="https://api.whatsapp.com/send?phone=525545835131&text=Hola%2C%20¿quisiera%20pedir%20informes%20sobre%20una%20cotización?"
     target="_blank"
     variant="success"
     block
