@@ -48,15 +48,7 @@
             </p>
             <b-row class="justify-content-center">
               <b-col sm="6">
-                <b-button
-                  href="https://api.whatsapp.com/send?phone=525543816903&text=Hola%2C%20¿quisiera%20pedir%20informes%20sobre%20sus%20servicios%20de%20transporte?"
-                  target="_blank"
-                  variant="success"
-                  block
-                  pill
-                  ><fa-icon class="fa-fw mr-2" :icon="faWhatsapp"></fa-icon
-                  >Pedir informes por whatsapp</b-button
-                >
+                <ButtonWhatsapp />
               </b-col>
             </b-row>
           </b-col>
