@@ -61,10 +61,13 @@
         </b-col>
         <b-col sm="2">
           <h6>Síguenos en:</h6>
-          <p class="lead">
-            <fa-icon class="mr-2" :icon="faFacebookSquare"></fa-icon>
-            <fa-icon class="mr-2" :icon="faLinkedin"></fa-icon>
-            <fa-icon class="mr-2" :icon="faInstagram"></fa-icon>
+          <p class="lead mb-4">
+            <a href="https://www.facebook.com/transcopar" target="_blank">
+              <fa-icon class="mr-2" :icon="faFacebookSquare"></fa-icon>
+            </a>
+            <a href="https://www.instagram.com/transcopar_/" target="_blank">
+              <fa-icon class="mr-2" :icon="faInstagram"></fa-icon>
+            </a>
           </p>
         </b-col>
       </b-row>
