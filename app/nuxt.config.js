@@ -70,6 +70,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics',
     [
       '@nuxtjs/fontawesome',
       {
@@ -136,6 +137,9 @@ export default {
       'ModalPlugin',
       'FormSelectPlugin',
     ],
+  },
+  googleAnalytics: {
+    id: 'UA-194046308-1',
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

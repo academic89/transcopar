@@ -87,7 +87,7 @@
                 </h2>
                 <p class="small mb-0">
                   Ofrecemos el servicio de transporte de mercancía a todos los
-                  estados de la republica mexicana con la logística más rápida
+                  estados de la República Mexicana con la logística más rápida
                   del mercado.
                 </p>
               </Card>
