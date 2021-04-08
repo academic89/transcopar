@@ -18,7 +18,7 @@
               <p class="mb-0">
                 <a href="https://shorturl.at/ckwH1" target="_blank"
                   ><span class="font-weight-bold">Direccion: </span> Catarino
-                  Benavides #208 ampliación san Pedro Xalapa Azcapotzalco C.P.
+                  Benavides #208 ampliación san Pedro Xalpa Azcapotzalco C.P.
                   02719</a
                 >
               </p>
@@ -34,8 +34,11 @@
             </b-col>
             <b-col class="pl-0">
               <p class="mb-0">
-                <span class="font-weight-bold">Contacto:</span><br />
-                Tel. <a href="tel:5581139489">01 (55) 8113 9489</a> <br />
+                <span class="font-weight-bold">Contacto:</span><br /><br />
+                <ButtonWhatsapp text="5545835131" size="sm" /><br />
+                Tel.
+                <a href="tel:5581139489">01 (55) 8113 9489</a>
+                <br />
                 Tel. <a href="tel:5581135873">01 (55) 8113 5873</a>
               </p>
             </b-col>
