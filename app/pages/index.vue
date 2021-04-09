@@ -3,9 +3,9 @@
     <transition name="slide-fade">
       <CardAction v-if="showAction" />
     </transition>
-    <b-modal id="cotizador" hide-header hide-footer>
+    <!-- <b-modal id="cotizador" hide-header hide-footer>
       <Calculator />
-    </b-modal>
+    </b-modal> -->
     <section ref="home" class="intro relative">
       <CarouselMobile class="d-block d-sm-none" />
       <Carousel class="d-none d-sm-block" />

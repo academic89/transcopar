@@ -5,12 +5,12 @@
         <b-col sm="12" class="mb-3 text-center">
           <b-row class="d-flex align-items-start">
             <b-col>
-              <p class="small">
+              <p>
                 Esta cotización es meramente informativa y sin ningún
                 compromiso.
               </p>
             </b-col>
-            <b-col cols="auto">
+            <!-- <b-col cols="auto">
               <b-button
                 variant="link"
                 size="sm"
@@ -18,7 +18,7 @@
               >
                 <fa-icon class="fa-2x fa-fw" icon="times-circle"></fa-icon>
               </b-button>
-            </b-col>
+            </b-col> -->
           </b-row>
 
           <p class="font-weight-bold text-success">

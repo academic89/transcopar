@@ -6,7 +6,7 @@
           <h2 class="h6 text-center text-warning">
             ¿Deseas cotizar alguno de nuestros servicios?
           </h2>
-          <b-button v-b-modal.cotizador variant="success" pill block
+          <b-button to="/calculator" variant="success" pill block
             >Comenzar ahora</b-button
           >
         </div>
