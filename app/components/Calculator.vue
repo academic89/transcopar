@@ -50,6 +50,18 @@
             Foráneo
           </label>
         </b-col>
+        <b-col v-if="check !== 'one'" sm="12">
+          <p class="small">
+            <span class="font-weight-bold">{{ check }}: </span>
+            <span v-if="check === 'Local'"
+              >Servicio dentro de tu misma localidad o estado.</span
+            >
+            <span v-if="check === 'Foráneo'"
+              >Servicio fuera de tu localidad con destino a otro estado de la
+              república.</span
+            >
+          </p>
+        </b-col>
         <b-col v-if="check === 'Foráneo'" sm="12" md="10" class="mb-4">
           <h5 class="mb-2 text-center">Destino:</h5>
           <b-form-select v-model="selected" :options="options"></b-form-select>
@@ -100,11 +112,10 @@
             block
             pill
             :disabled="
-              check && checkUnit !== 'one'
+              (check === 'Local' && checkUnit !== 'one') ||
+              (check === 'Foráneo' && checkUnit !== 'one' && selected !== null)
                 ? false
-                : true || (checkUnit === 'Foráneo' && selected !== null)
-                ? true
-                : false
+                : true
             "
             @click="calculater"
             >Cotizar servicio</b-button
