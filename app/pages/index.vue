@@ -21,16 +21,17 @@
                   <h1 class="h4 mb-5">
                     Somos líderes en el servicio de transporte en México.
                   </h1>
-                  <b-button
-                    v-scroll-to="{
+                  <!-- v-scroll-to="{
                       el: '#services',
                       duration: 800,
-                    }"
+                    }" -->
+                  <b-button
+                    to="/calculator"
                     variant="success"
                     class="px-4"
                     size="lg"
                     pill
-                    >Conoce nuestros servicios</b-button
+                    >Cotiza tu servicio</b-button
                   >
                 </b-col>
               </transition>

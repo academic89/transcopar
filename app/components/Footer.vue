@@ -37,9 +37,9 @@
                 <span class="font-weight-bold">Contacto:</span><br /><br />
                 <ButtonWhatsapp text="5545835131" size="sm" /><br />
                 Tel.
-                <a href="tel:5581139489">01 (55) 8113 9489</a>
+                <a href="tel:5581139489">(55) 8113 9489</a>
                 <br />
-                Tel. <a href="tel:5581135873">01 (55) 8113 5873</a>
+                Tel. <a href="tel:5581135873">(55) 8113 5873</a>
               </p>
             </b-col>
           </b-row>
