@@ -12,6 +12,10 @@ export default {
           "default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *; img-src 'self' data: *",
       },
       {
+        name: 'facebook-domain-verification',
+        content: 'o994bg7n6wcw53ny70uz9h1fexnnhr',
+      },
+      {
         name: 'description',
         content:
           'Somos líderes en el servicio de transporte en México. 30 años de experencia nos respaldan.',
