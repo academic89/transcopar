@@ -1,8 +1,8 @@
 <template>
   <section id="footer" class="pt-5 pb-2 bg-black text-white small">
     <b-container>
-      <b-row class="d-flex align-items-end">
-        <b-col sm="4">
+      <b-row class="d-flex align-items-end justify-content-center">
+        <!-- <b-col sm="4">
           <h6>Localizanos</h6>
           <p class="mb-4">
             Contáctanos para mayor información e informarte como es el proceso
@@ -24,7 +24,7 @@
               </p>
             </b-col>
           </b-row>
-        </b-col>
+        </b-col> -->
         <b-col sm="3">
           <b-row class="d-flex align-items-center mb-4">
             <b-col cols="auto">
