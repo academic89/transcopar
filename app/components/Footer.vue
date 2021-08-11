@@ -57,7 +57,9 @@
             <b-col class="pl-0">
               <p>
                 <span class="font-weight-bold">Correo electrónico:</span><br />
-                transcopar@hotmail.com
+                <a href="mailto:contacto@transcopar.com"
+                  >contacto@transcopar.com</a
+                >
               </p>
             </b-col>
           </b-row>
